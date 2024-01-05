@@ -1,0 +1,14 @@
+CHIP HalfAdder {
+    IN a, b; 
+    OUT sum, carry;
+    PARTS:
+        Xor(a=a, b=b, out=sum);
+        And(a=a, b=b, out=carry); 
+}
+
+/*
+"a" and "b" are the input bits.
+"sum" is output --> represents the result of the addition (bitwise-XOR of a and b).
+"carry" represents the "carry-out", indicates - whether there's a carry to the next higher bit (bitwise-AND of a and b)*/
+
+//Half Adder OVER
